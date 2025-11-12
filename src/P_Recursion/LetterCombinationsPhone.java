@@ -1,6 +1,7 @@
 package P_Recursion;
 
-import java.util.ArrayList;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import readwrite.FastReader;
 
@@ -35,6 +36,12 @@ public class LetterCombinationsPhone {
         FastReader sc = new FastReader();
         ArrayList<String> result = letterCombinations(str, "");
         System.out.println(result);
+
+        int[] A = {1, 2, 2};
+
+        HashSet<Integer> set = Arrays.stream(A)
+                                .boxed()
+                                .collect(Collectors.toCollection(HashSet :: new));
 
         
     }
