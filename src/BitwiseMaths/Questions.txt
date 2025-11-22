@@ -1,0 +1,25 @@
+// Questions and formulae
+
+
+1. Total bits count in number N -> log2(N) + 1 => log(N)/log(2) + 1.
+2. Total set bits count -> keep doing N = N & (N-1) till N > 0 , as - N & (N-1) clears the rightmost set bit in the number.
+
+3. Right most set bit -> N & (-N) -> gives a number like - 1000, 10, 100 -> with the MSB as right most set bit index of original number.
+
+4. Set a bit at a particular index.
+5. Clear a bit a a paritcular index.
+6. Check if a number is a power of 2 or not -> a power of 2 will have only 1 setbit thus check  -> N & (N-1) == 0 should be true for power of two.
+
+7. Check if odd or even.
+8. Left shift a number -> multiplies it by 2 faster than a multiple op
+9. Right shift a number -> divides it by 2 ...
+
+10. Find XOR of all numbers from 0 to N -> Pattern repeating at every 4th number - can be calculated using remainders as
+
+    if N % 4 == 0 , then XOR of 0 -> N = N.
+    if N % 4 == 1, then XOR of 0 -> N = 1.
+    if N % 4 == 2, then XOR of 0 -> N = N + 1.
+    if N % 4 == 3, then XOR of 0 -> N = 0.
+
+11. XOR of all numbers between a and b -> (XOR of 0 - b) XOR (XOR of 0 - a)
+

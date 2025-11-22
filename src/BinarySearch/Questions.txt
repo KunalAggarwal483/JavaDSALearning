@@ -1,0 +1,8 @@
+// Questions practice
+
+1. Search a target in sorted array - asc or desc
+2. Find lowerbound and upperbound
+3. Find first  and the last occurence of a target
+4. Find next greater character in a array of character, (note that characters wrap around means if no character found then return the first character in array)
+Find Peak element - example array - {1, 2, 3, 6, 5, 4, 1} - peak 6 so ans is 3.
+5.
